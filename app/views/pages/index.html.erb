@@ -1,0 +1,35 @@
+
+<!--banner  start-->
+<%= render 'shared/banner' %>
+<!--banner  end-->
+
+<!--arrivals  start-->
+<%= render 'shared/arrivals' %>
+<!-- arrivals end-->
+
+<!-- bestsales start-->
+<%= render 'shared/bestsales' %>
+<!-- bestsales end-->
+
+<!-- newsletter start-->
+<%= render 'shared/newsletter' %>
+<!-- newsletter end-->
+
+<!-- ads start-->
+<%= render 'shared/ads' %>
+<!-- ads end-->
+
+<!-- delete "#_=_" after login with facebook-->
+<script>
+    $(document).ready(function(){
+        (function() {
+            "use strict";
+            if (window.location && window.location.hash) {
+                if (window.location.hash === '#_=_') {
+                    window.location.hash = '';
+                    history.pushState('', document.title, window.location.pathname); // nice and clean
+                }
+            }
+        }());
+    });
+</script>
